@@ -71,39 +71,46 @@ function retornaStringEmMaiuscula(string) {
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  const ingressosVendidos = custo/valorIngresso
+  const ingressosVendidos = custo/valorIngresso;
 
   return ingressosVendidos
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  // implemente sua lógica aqui
-  
+  const mesmoTamanho = string1.length === string2.length
+
+  return mesmoTamanho
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
+  const primeiroElemento = array[0]
 
+  return primeiroElemento
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
 
+  return array[array.length-1]
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
-
+  const primeiroItem = array[0]
+  array.shift()
+  array.unshift(array[array.length-1])
+  array.pop()
+  array.push(primeiroItem)
+  
+  return array
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
-  // implemente sua lógica aqui
 
+  return string1.toUpperCase() === string2.toUpperCase()
 }
 
 // EXERCÍCIO 13
